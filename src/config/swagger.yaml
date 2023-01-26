@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Designo
+  description: Designo web API
+  version: 0.1.9
+
+servers:
+  - url: https://audiophile-r04o.onrender.com/api
+    description: production server
+  - url: http://localhost:5000/api
+    description: local server
+paths:
+  /design:
+    get:
+      tags:
+        - Designs
+      responses:
+        "200":
+          description: get all designs info successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
