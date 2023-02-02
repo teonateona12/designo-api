@@ -42,7 +42,7 @@ paths:
                 message:
                   type: string
                 phone:
-                  type: number
+                  type: string
       responses:
         "200":
           description: add successfully
