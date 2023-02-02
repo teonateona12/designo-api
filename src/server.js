@@ -12,6 +12,9 @@ connection();
 
 app.use(bodyParser.json());
 app.use(cors());
+
+app.use("/designo", express.static("public/designo"));
+
 app.use("/api", designRouter);
 app.use("/", ...swaggerMiddleware);
 

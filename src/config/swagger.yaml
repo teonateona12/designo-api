@@ -23,3 +23,26 @@ paths:
                 type: array
                 items:
                   type: string
+  /email:
+    post:
+      tags:
+        - information
+      requestBody:
+        description: information
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+              properties:
+                email:
+                  type: string
+                name:
+                  type: string
+                message:
+                  type: string
+                phone:
+                  type: number
+      responses:
+        "200":
+          description: add successfully
